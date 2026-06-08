@@ -1,3 +1,5 @@
+<!-- Hyperlinks, attribute, image, form, input, Radio, fieldset, Button -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,40 +8,42 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Anchor tag</h2>
-    <a href="https://google.com" target="_blank">This is link</a>
-    <h2>Img tag</h2>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtWo-Q7gRaHozTOE9weW_SSTYv_ulYvK4RYQ&s" alt="Description of the image" height="100px" width="100px"/>
-    <h2>Form tag</h2>
+    <a href="https://www.google.com" target="_blank">This is link</a>
+    <br/>
+    <br/>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVJABkE1lLJtug8FbDhltmdwvcLJM6m6l1-A&s" alt="Students taking lecture while holding laptops" height="300px" width="300px"/>
+    <br>
+
     <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" minlength="3" maxlength="100" required><br><br>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required/>
+        <br>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+        <br>
+        <br>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="country">Select your country:</label>
-        <select name="country" required>
-<option value="">Select your country</option>
-<option value="usa">USA</option>
-<option value="canada">Canada</option>
+        <label for="dropdown">Choose an option:</label>
+        <select id="dropdown" name="dropdown">
+            <option value="">--Please choose an option--</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
         </select>
-
-        <br/>
-                <br />
-
+<br>
+<br>
 <fieldset>
-  <legend>Select your gender</legend>
-<input type="radio" id="male" name="gender" value="male" checked>
-<label for="male">Male</label>
+    <legend>Select your gender</legend>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
 
-<input type="radio" id="female" name="gender" value="female">
-<label for="female">Female</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
 </fieldset>
 
-        <br />
-        <br />
-
+        <br>
+        <br>
         <button>Submit</button>
     </form>
 </body>
