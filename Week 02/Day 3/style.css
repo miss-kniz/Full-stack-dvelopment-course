@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+section{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero{
+        width: 80%;
+        margin: auto;
+        position: relative;
+}
+
+h1{
+    text-align: center;
+    font-size: 5rem;
+    font-family: "Fraunces", serif;
+    font-weight: 400;
+}
+
+img{
+    width: 22rem;
+    position: absolute;
+    z-index: -1;
+}
+
+img:hover{
+    scale: 2;
+}
+
+.less-width{
+    width: 16rem;
+}
+
+#plant-shelf{
+    left: 0;
+}
+
+#right-top{
+    right: 15%;
+    top: 18%;
+}
+
+#right-bottom{
+    right: 0;
+    bottom: 10%;
+}
